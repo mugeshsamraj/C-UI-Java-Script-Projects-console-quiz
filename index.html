@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console Quiz</title>
+</head>
+<body>
+  <script>
+    var readlineSync = require('readline-sync');
+let score = 0;
+let ram=8;
+let suresh=9;
+var userName = readlineSync.question('May I have your name? ');
+console.log('Hi ' + userName + '!');
+
+var age = readlineSync.question('What is your age ? ');
+console.log('Hi ' + userName + ' age ' + age );
+
+if (age >= 18)
+{
+  console.log("Your are eligiable to Quiz ");
+  {
+    {var quest = readlineSync.question('Which is biggest animal');
+    animals = ['Lion', 'Elephant', 'Crocodile', 'Giraffe', 'Hippo'],
+  index = readlineSync.keyInSelect(animals, 'Which animal?');
+console.log('Ok, ' + animals[index] + ' goes to your room.');
+   if(animals[1] == true )
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  }
+  }
+  {var quest1 = readlineSync.question('How many colors are there in a rainbow');
+    rainbow = ['4','5','6','7']
+  index = readlineSync.keyInSelect(rainbow, 'colors are there in a rainbow');
+console.log('Ok, ' + rainbow[index] + ' colors are there in a rainbow.');
+   if(rainbow[3] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  
+   var quest2 = readlineSync.question('Which animal is known as the ‘Ship of the Desert?');
+    ship = ['tiger','camel','lion','cat']
+  index = readlineSync.keyInSelect(ship);
+   if(ship[1] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  }
+
+  {var quest3 = readlineSync.question('How many letters are there in the English alphabet?');
+    letter = ['26','27','28','29']
+  index = readlineSync.keyInSelect(letter);
+   if(letter[0] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  }
+
+  {var quest4 = readlineSync.question('Which festival is known as the ‘Festival of flowers’?');
+    festival = ['new year','pongal','diwali','onam']
+  index = readlineSync.keyInSelect(festival);
+   if(festival[3] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  }
+
+  {var quest5 = readlineSync.question('Which is the most widely spoken language in the world?');
+    language = ['spanish','hindi','mandarin','english']
+  index = readlineSync.keyInSelect(language);
+   if(language[2] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  }
+
+  {var quest6 = readlineSync.question('How many stars are there in the American flag?');
+    flag = ['48','49','50','51']
+  index = readlineSync.keyInSelect(flag);
+   if(flag[2] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  }
+
+  {var quest7 = readlineSync.question('Which is the largest country in the world?');
+    country = ['russia','india','usa','mexico']
+  index = readlineSync.keyInSelect(country);
+   if(country[0] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  }
+
+  {var quest8 = readlineSync.question('How many players are there in a cricket team?');
+    cricket = ['10','11','12','9']
+  index = readlineSync.keyInSelect(cricket);
+   if(cricket[1] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;}
+   console.log('your score is '+ score);
+  }
+
+  {var quest9 = readlineSync.question('Which planet is known as the Red Planet?');
+    Planet = ['mars','earth','venus','jupiter']
+  index = readlineSync.keyInSelect(Planet);
+   if(Planet[0] == true)
+   {
+     console.log('your answer is correct');
+     score++;
+   }
+   else{console.log('Your answer is wrong ');
+       score--;
+       }
+  }
+  
+   console.log(userName +' total_score is '+ score);
+   console.log('ram total_score is '+ ram);
+   console.log('suresh total_score is '+ suresh);
+  
+  }
+else{
+  console.log("Your not are eligiable to Quiz ");
+}
+  </script>
+</body>
+</html>
